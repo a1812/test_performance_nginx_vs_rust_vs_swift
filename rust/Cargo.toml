@@ -1,0 +1,16 @@
+[package]
+name = "rust_test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.8"
+serde = { version = "1.0.228", features = ["derive"] }
+# Важно: включите small_rng
+rand = { version = "0.8", features = ["small_rng"] }
+tokio = { version = "1.0", features = ["full"] }
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
