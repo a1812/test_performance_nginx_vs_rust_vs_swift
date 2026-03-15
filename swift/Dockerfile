@@ -71,3 +71,10 @@ RUN set -e; \
 
 # Print Installed Swift Version
 RUN swift --version
+
+WORKDIR /usr/src/swift_test
+COPY . .
+
+RUN swift build -c release
+
+CMD [".build/release/NioWorker"]
