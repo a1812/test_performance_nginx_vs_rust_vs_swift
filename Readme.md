@@ -1,5 +1,11 @@
 # This is a joke project that arose from a dispute about who is faster.
 
+## golang
+```bash
+wrk -t8 -c1000 -d30s http://127.0.0.1:2999
+```
+http://127.0.0.1:2999/
+
 ## rust
 ```bash
 wrk -t8 -c1000 -d30s http://127.0.0.1:3000
@@ -20,9 +26,9 @@ wrk -t8 -c1000 -d30s http://127.0.0.1:3002
 ```
 http://127.0.0.1:3002/
 
-## nginx 
+## nginx
 
 ```bash
 wrk -t8 -c1000 -d30s http://127.0.0.1:3003
 ```
-http://127.0.0.1:3030/
+http://127.0.0.1:3003/
